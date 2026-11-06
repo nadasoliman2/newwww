@@ -28,7 +28,9 @@ app.use('/auth',authController)
 app.use('/user',userController)
 app.use('/message',messageController)
 app.use('/product',productController)
-
+app.get('/',(req,res)=>{
+    res.json({message:"hello world"})
+})
 
 app.use(errorHandler)
 export default app
