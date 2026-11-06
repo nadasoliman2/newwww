@@ -31,3 +31,4 @@ app.use('/product',productController)
 
 
 app.use(errorHandler)
+export default app
